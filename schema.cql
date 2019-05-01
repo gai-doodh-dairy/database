@@ -1,4 +1,4 @@
-CREATE KEYSPACE dairy_management WITH replication = {'class': 'NetworkTopologyStrategy', 'dc1': '2', 'dc2': '1'}  AND durable_writes = true;
+CREATE KEYSPACE dairy_management WITH replication = {'class': 'NetworkTopologyStrategy', 'datacenter1': '2', 'datacenter2': '1'}  AND durable_writes = true;
 
 CREATE TABLE dairy_management.purchase (
     uid bigint,
